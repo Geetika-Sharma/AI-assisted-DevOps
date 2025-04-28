@@ -151,14 +151,34 @@ If the container is failing to start, fix the image or entry point issue:
 
 kubectl set image deployment <deployment-name> <container-name>=<new-image>
 ```
+Example 3 - Non DevOps
+```
+Prompt:
 
+The odd numbers in this group add up to an even number: 4, 8, 9, 15, 12, 2, 1.
+A: Adding all the odd numbers (9, 15, 1) gives 25. The answer is False.
+The odd numbers in this group add up to an even number: 15, 32, 5, 13, 82, 7, 1.
+A:
+```
 ✅ Best Practices for Prompt Engineering
 
-Be clear and specific – The more specific the prompt, the better the output.
+- Be clear and specific – The more specific the prompt, the better the output.
+- Use context – Provide background information or examples when needed.
+- Iterate and refine – If the output isn’t ideal, adjust the prompt.
+- Use CoT for complex tasks – Step-by-step reasoning improves accuracy.
 
-Use context – Provide background information or examples when needed.
+# Prompt Engineering for Generative AI 
+## Prompting Best Practices
+- Clearly communicate what content or information is most important.
+- Structure the prompt: Start by defining its role, give context/input data, then provide the instruction.
+- Use specific, varied examples to help the model narrow its focus and generate more accurate results.
+- Use constraints to limit the scope of the model's output. This can help avoid meandering away from the instructions into factual inaccuracies.
+- Break down complex tasks into a sequence of simpler prompts.
+- Instruct the model to evaluate or check its own responses before producing them. ("Make sure to limit your response to 3 sentences", "Rate your work on a scale of 1-10 for conciseness", "Do you think this is correct?").
 
-Iterate and refine – If the output isn’t ideal, adjust the prompt.
+# Additonal Resources
+- https://developers.google.com/machine-learning/resources/prompt-eng
+- https://ai.google.dev/gemini-api/docs/prompting-strategies
+- https://learnprompting.org/
 
-Use CoT for complex tasks – Step-by-step reasoning improves accuracy.
 
