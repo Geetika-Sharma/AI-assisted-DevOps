@@ -23,6 +23,7 @@ A GenAI powered tool that generates optimized Dockerfiles based on programming l
 3. **Pull Llama3 Model**
    ```bash
    ollama pull llama3.2:1b
+   ollama pull gemma3
    ```
 
 ## 🚀 Project Setup
@@ -43,6 +44,7 @@ A GenAI powered tool that generates optimized Dockerfiles based on programming l
 3. **Run the Application**
    ```bash
    python3 generate_dockerfile.py
+   python3 generate_dockerfile_gemma.py
    ```
 
 ## 💡 How It Works
