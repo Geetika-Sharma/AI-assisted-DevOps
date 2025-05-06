@@ -29,7 +29,6 @@ Use meaningful filenames that describe the script’s purpose.
 
 > Example: `aws_vpc_creation.sh`
 
----
 
 ### 2. Start with a Clear Comment Block
 
